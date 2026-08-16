@@ -1,0 +1,117 @@
+/* ContactSection.css */
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+/* ── Dark card ── */
+.contact-card {
+  background: var(--color-dark);
+  border-radius: 12px;
+  padding: 40px;
+  color: var(--color-cream);
+}
+
+.contact-card-title {
+  font-family: var(--font-display);
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: -0.4px;
+  margin-bottom: 12px;
+}
+
+.contact-card-desc {
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--color-cream);
+  margin-bottom: 28px;
+}
+
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-ui);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-cream);
+  text-decoration: none;
+  padding: 10px 14px;
+  border-radius: 8px;
+  background: rgba(242, 241, 237, 0.08);
+  border: 1px solid rgba(242, 241, 237, 0.12);
+  transition: all 150ms ease;
+}
+
+.contact-link:hover {
+  background: rgba(242, 241, 237, 0.14);
+  color: #fff;
+}
+
+/* ── Availability ── */
+.availability-block {
+  padding: 8px 0;
+}
+
+.avail-label {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--color-accent);
+  margin-bottom: 16px;
+}
+
+.avail-title {
+  font-family: var(--font-display);
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: -0.3px;
+  color: var(--color-dark);
+  margin-bottom: 10px;
+}
+
+.avail-desc {
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--text-secondary);
+  margin-bottom: 24px;
+}
+
+.avail-items {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 28px;
+}
+
+.avail-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-body);
+  font-size: 15px;
+  color: var(--color-dark);
+}
+
+.avail-check {
+  color: var(--color-success);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+@media (max-width: 900px) {
+  .contact-grid { grid-template-columns: 1fr; }
+}

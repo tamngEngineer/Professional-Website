@@ -1,0 +1,46 @@
+/* ToolsSection.css */
+
+.tools-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.tool-chip {
+  background: var(--color-surface-300);
+  border: 1px solid var(--border-primary);
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 150ms ease;
+}
+
+.tool-chip:hover {
+  background: var(--color-surface-100);
+  border-color: var(--border-medium);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-ambient);
+}
+
+.tool-emoji {
+  font-size: 20px;
+}
+
+.tool-name {
+  font-family: var(--font-ui);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-dark);
+}
+
+.tool-cat {
+  font-family: var(--font-ui);
+  font-size: 11px;
+  color: var(--text-secondary);
+}
+
+@media (max-width: 900px) {
+  .tools-grid { grid-template-columns: repeat(2, 1fr); }
+}
